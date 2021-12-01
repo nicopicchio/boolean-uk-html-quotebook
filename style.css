@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(/images/background.jpg);
+    background-size: auto;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: darkorange;
+    font-family: "Pacifico";
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    margin: 1rem auto;
+    text-align: center;
+    color: black;
+}
+
+.quote-heading {
+    font-family: "Pacifico";
+    font-weight: 100;
+    color: darkorange;
+    margin-bottom: 1rem;
+}
+
+.quote-container {
+    padding: 2rem;
+    margin: 2rem 0rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.295);
+}
+
+.quote-container:nth-child(odd) {
+    background: rgba(152, 251, 152, 0.4);
+}
+
+.quote-container:nth-child(even) {
+    background: rgba(171, 128, 240, 0.4);
+}
+
+.quote {
+    padding: 1rem 0rem;
+    width: 70ch;
+    font-weight: bold;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    color: darkorange;
+    background-color: rgba(0, 0, 0, 0.4);
+}
